@@ -179,6 +179,7 @@ public class Interfaz extends javax.swing.JFrame {
             if (this.ganar()==5){
                 palabra.setText(p.comparar(c));
                 JOptionPane.showMessageDialog(this, "GANASTE!!!");
+                System.exit(0);
             }else{
                 palabra.setText(p.comparar(c));
             }
@@ -320,11 +321,12 @@ public class Interfaz extends javax.swing.JFrame {
                 //3. Asignar la image a la etiqueta
                 ImageIcon miIcono5 = new ImageIcon(miImagen5);
                 img.setIcon(miIcono5);
-                JOptionPane.showMessageDialog(this, "Loser!!!");
-                JOptionPane.showMessageDialog(this, "la palabra era:'"+p.getElegida()+"'.");
+                JOptionPane.showMessageDialog(this, "Loser!!! la palabra era:'"+p.getElegida()+"'.");
+                System.exit(0);
                 break;
             default:
                 JOptionPane.showMessageDialog(this, "Has perdido"); 
+                
         }
         
     }
